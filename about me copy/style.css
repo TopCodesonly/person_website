@@ -1,0 +1,289 @@
+body{  
+    background-image:url(background_image.jpeg); 
+    height: 600px; 
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 50px;
+  font-family: 'Rowdies', cursive;
+  background-image:linear-gradient(#2e658f,#2e658f,#8a07ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
+
+
+
+
+  
+
+}
+
+h1:hover{
+  text-transform:uppercase;
+}
+
+.rectangle {
+  margin-top: 2cm;
+  background-image:radial-gradient(ellipse at bottom, #191970,#CBC3E3);
+  font-size: 50px;
+  font-family: 'Rowdies', cursive;
+  text-decoration: solid;
+  text-align: center;
+  border-style:groove;
+  border-radius: 20px;
+  border-color: rgb(58, 58, 196);
+  border-width: 5px;
+  border: 1px solid;
+  width: 90mm;
+  height: 15cm;
+  cursor: pointer;
+  box-shadow: 10px 10px black;
+  box-shadow: 0 0 100px 10px aqua;
+  transition: all ease 0.3s;
+  
+  
+}
+
+
+
+.flexbox{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  flex: 100%;
+  
+}
+@media (max-width:900px){
+  .flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+  
+  }
+  .rectangle{
+    width: 50mm;
+    height: 8cm;
+  }
+
+
+
+  
+
+ 
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+
+
+
+}
+
+
+
+@keyframes animageBg{
+  0%,100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+}
+
+span{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+  0 0 0 8px rgba(red, green, blue, alpha),
+  0 0 20px rgba(red, green, blue, alpha);
+  animation: animate 3s linear infinite;
+
+
+}
+
+span::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg,#fff,transparent);
+
+}
+
+@keyframes animate{
+
+  0%{
+    transform: rotate(325deg) translateX(0);
+    opacity: 6;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: rotate(325deg) translateX(-1000px) ;
+    opacity: 0;
+  }
+
+  
+}
+
+span:nth-child(1){
+  top:0px;
+  right: 0;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 1s;
+
+}
+
+
+span:nth-child(2){
+  top:0px;
+  right:80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+  
+}
+
+span:nth-child(3){
+  top:80px;
+  right:0px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+  
+}
+
+span:nth-child(4){
+  top:80px;
+  right:180px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 1.5s;
+  
+}
+
+
+span:nth-child(5){
+  top:0px;
+  right:400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+  
+}
+
+
+
+
+span:nth-child(6){
+  top:0px;
+  right:600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  
+}
+
+
+span:nth-child(7){
+  top:300px;
+  right:0px;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
+  
+}
+
+
+span:nth-child(8){
+  top:0px;
+  right:700px;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 1.25s;
+  
+}
+
+span:nth-child(9){
+  top:0px;
+  right:1000px;
+  left: initial;
+  animation-delay: 0.7s;
+  animation-duration: 2.25s;
+  
+}
+
+
+span:nth-child(10){
+  top:0px;
+  right:450px;
+  left: initial;
+  animation-delay: 2s;
+  animation-duration: 2.25s;
+  
+}
+
+
+.rectangle span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.rectangle span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.rectangle:hover span {
+  padding-right: 25px;
+}
+
+.rectangle:hover span:after {
+  opacity: 50;
+  right: 0;
+}
+
+
+.rectangle:hover{
+  transform: scale(1.1);
+
+}

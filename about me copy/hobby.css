@@ -1,0 +1,367 @@
+body{  
+  background-image:url(background_image.jpeg); 
+
+  background-size: cover;
+
+}
+
+h1{
+text-align: center;
+text-decoration: solid;
+
+color:yellow;
+font-style: oblique;
+font-size: 50px;
+font-family:'Courier New', Courier, monospace;
+
+
+}
+
+h1:hover{
+text-transform:uppercase;
+}
+
+
+@keyframes animageBg{
+    0%,100%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+  }
+  
+  span{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    width: 4px;
+    height: 4px;
+    background:radial-gradient(gold,purple);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(red, green, blue, alpha),
+    0 0 20px rgba(red, green, blue, alpha);
+    animation: animate 3s linear infinite;
+    width: 30px;
+
+  
+  
+  }
+  
+  span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,deepskyblue,transparent);
+
+    
+  
+  }
+  
+  @keyframes animate{
+  
+    0%{
+      transform: rotate(325deg) translateX(0);
+      opacity: 6;
+    }
+    70%{
+      opacity: 1;
+    }
+    100%{
+      transform: rotate(325deg) translateX(-1000px) ;
+      opacity: 0;
+    }
+  
+    
+  }
+  
+  span:nth-child(1){
+    top:0px;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+  
+  }
+  
+  
+  span:nth-child(2){
+    top:0px;
+    right:80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+    
+  }
+  
+  span:nth-child(3){
+    top:80px;
+    right:0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+    
+  }
+  
+  span:nth-child(4){
+    top:80px;
+    right:180px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 1.5s;
+    
+  }
+  
+  
+  span:nth-child(5){
+    top:0px;
+    right:400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+    
+  }
+  
+  
+  
+  
+  span:nth-child(6){
+    top:0px;
+    right:600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    
+  }
+  
+  
+  span:nth-child(7){
+    top:300px;
+    right:0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+    
+  }
+  
+  
+  span:nth-child(8){
+    top:0px;
+    right:700px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1.25s;
+    
+  }
+  
+  span:nth-child(9){
+    top:0px;
+    right:1000px;
+    left: initial;
+    animation-delay: 0.7s;
+    animation-duration: 2.25s;
+    
+  }
+  
+  
+  span:nth-child(10){
+    top:0px;
+    right:450px;
+    left: initial;
+    animation-delay: 2s;
+    animation-duration: 2.25s;
+ 
+    
+  }
+  
+
+
+    
+
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto);
+  body {
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Brush Script MT, Brush Script Std, cursiv;
+    background-color: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); 
+  }
+  
+  .Hint_what_to_do{
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    padding-top: 400px; 
+  }
+  
+
+  
+  aside {
+    border-top: 0px solid #26A6 9A;
+    border-bottom: 0px solid #00695C;
+    border-radius: 50%;
+    margin-left: 10cm;
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); 
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px aqua;
+    transition: all ease 0.3s;
+  }
+  
+  aside:hover {
+    border-top: 4px solid #26A69A;
+    border-bottom: 4px solid #00695C;
+    border-radius: 30px;
+    height: 300px;
+    width: 450px;
+    box-shadow: 0 0 70px 10px aqua;
+  }
+  
+  .profile-card-chess {
+    border-top: 0px solid #26A6 9A;
+    border-bottom: 0px solid #00695C;
+    border-radius: 50%;
+    margin-left: 25cm;
+    margin-top: -2.8cm;
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); 
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px aqua;
+    transition: all ease 0.3s;
+  }
+  
+  .profile-card-chess:hover {
+    border-top: 4px solid #26A69A;
+    border-bottom: 4px solid #00695C;
+    border-radius: 30px;
+    height: 300px;
+    width: 450px;
+    box-shadow: 0 0 70px 10px aqua;
+  }
+
+  .profile-card-drums {
+    border-top: 0px solid #26A6 9A;
+    border-bottom: 0px solid #00695C;
+    border-radius: 50%;
+    margin-left: 38cm;
+    margin-top: -2.8cm;
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); 
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px aqua;
+    transition: all ease 0.3s;
+  }
+  
+  .profile-card-drums:hover {
+    border-top: 4px solid #26A69A;
+    border-bottom: 4px solid #00695C;
+    border-radius: 30px;
+    height: 300px;
+    width: 450px;
+    box-shadow: 0 0 70px 10px aqua;
+  }
+  
+
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    position: relative;
+    text-align: center;
+    color: aqua;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease 0.250s;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  
+
+  
+  .profile-bio {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: aqua;
+    font-size: 25px;
+    text-align: center;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
+  }
+  
+  aside:hover .profile-bio {
+    opacity: 1;
+  }
+  
+  .profile-bio p:first-child {
+    text-align: center;
+    font-size: 26px;
+  }
+  .flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex: 100%;
+    
+  }
+
+  @media (max-width:900px){
+
+    .flexbox{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      align-content: center;
+      flex: 100%;
+    }
+      
+    
+    
+    }  
+.btn-gradient {
+    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    border: 0;
+    color: rgba(var(--text-color));
+    border-radius: 50px;
+    margin-top: -4cm;
+    font-size: 20px;
+    color:white;
+    transition: all 0.5s ease-in-out;
+      
+    
+  }
+.btn-gradient:hover{
+    color: aqua;
+    transform: rotate(360deg); 
+  }
+    
+i{
+    margin-right: 2px;
+    
+      
+  }
+    
+  
+ 
+
+ 
+  

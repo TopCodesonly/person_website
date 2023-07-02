@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+ 
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+    <a href="index.html">
+        <button class="btn btn-gradient btn-glow"> <i class="fa fa-home"></i>Home</button>
+    </a>
+    <center>
+
+
+        <h1>My skills</h1>    
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <script>
+        var xValues = ["Python", "Html", "Css", "AI/ML", "Js"];
+        var yValues = [90, 90, 60, 55, 40];
+        var barColors = ["red", "green","blue","orange","brown","red"];
+        
+        new Chart("myChart", {
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            title: {
+            display: true,
+            text: "My coding language "
+            }
+        }
+        });
+        </script>
+    
+    
+    <center>
+    
+</body>
+</html>
